@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar sesión</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="trainer">Seleccione su entrenador: </label> <!--sellecion de entrenador personal de acuerdo a la base de datos de entrenadores personales, dropdown-->
+            <select name="trainer" id="trainer" required>
+                <option value="jose">José</option>
+            <option value="maria">María</option>
+            <option value="fernando">Fernando</option>
+            </select>
+        </div>
+
+        <div><!--fecha de la sesion (DD/MM/YY 00:00)-->
+            <label for="dateTimePicker">Seleccione la fecha y hora de la sesion: </label>
+        <input type="datetime-local" id="dateTimePicker" required>
+        </div>
+
+        <div class="inputbox"> <!-- lugar de reunion, ej general flores, 2030-->
+            <label for="location">Ingrese el lugar de reunion: </label>
+            <input type="text" name="location" required>
+        </div>
+
+        <button>Submit</button>
+    </form>
+    
+</body>
+</html>
